@@ -1,0 +1,23 @@
+.tituloPage{
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.bio__contenido{
+    h1{
+        text-align: center;
+    }
+    .imagenBio img{
+        display: block;
+        text-align: right;
+        border-radius: 10px;
+    }
+    .bioText{
+        font-family:'Josefin Slab', serif;
+        font-weight: 600;
+        font-size: 20px;
+        text-align: right;
+    }
+}
+

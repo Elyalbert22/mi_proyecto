@@ -1,0 +1,73 @@
+.titulo__index{
+    background: #ece8d8;
+    
+    .tituloHome{
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
+        font-weight: 700;
+        font-size: 40px;
+        color: #3a3939;
+        text-decoration: none;
+        padding: 20px;
+    }
+    .menu {
+        font-family: 'Josefin Slab', serif;
+        font-weight: 600;
+        font-size: 25px;
+        padding: 15px;
+        color: #747474;
+        margin: 10px;
+        
+        :hover{
+            color:white !important;
+            background-color: black;
+            padding: 5px;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: all 0.8s;
+            }
+        }
+}
+
+.imgFuego{
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+.footer{
+    background:#ece8d8;
+    padding: 15px;
+    .fin p{
+        font-family: 'Josefin Slab', serif;
+        font-weight: 500;
+        color: #3a3939;
+        padding: 15px;
+        span{
+            color:#003D6C;
+            font-weight: 700;
+        }
+    }
+    .redes{
+        display: flex;
+            }
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

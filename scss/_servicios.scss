@@ -1,0 +1,32 @@
+
+/* ----SERVICIOS---- */
+
+.titulo__servi{
+    font-family:'Josefin Slab', serif;
+    .titulo1{
+        font-family: 'Playfair Display', serif;
+    }
+    .icon{
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+
+    }
+    
+    .textServ{
+        
+        padding: 5px;
+        
+        
+    }
+    
+    .boton{
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        width: 100%;
+        font-family: 'Playfair Display', serif;
+        
+        
+    }
+}

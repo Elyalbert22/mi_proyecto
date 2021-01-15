@@ -1,0 +1,134 @@
+html, body {
+  height: 100%; }
+
+.titulo__index {
+  background: #ece8d8; }
+  .titulo__index .tituloHome {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 40px;
+    color: #3a3939;
+    text-decoration: none;
+    padding: 20px; }
+  .titulo__index .menu {
+    font-family: 'Josefin Slab', serif;
+    font-weight: 600;
+    font-size: 25px;
+    padding: 15px;
+    color: #747474;
+    margin: 10px; }
+    .titulo__index .menu :hover {
+      color: white !important;
+      background-color: black;
+      padding: 5px;
+      border-radius: 5px;
+      font-weight: 600;
+      transition: all 0.8s; }
+
+.imgFuego {
+  display: block;
+  text-align: center;
+  padding: 10px; }
+
+.footer {
+  background: #ece8d8;
+  padding: 15px; }
+  .footer .fin p {
+    font-family: 'Josefin Slab', serif;
+    font-weight: 500;
+    color: #3a3939;
+    padding: 15px; }
+    .footer .fin p span {
+      color: #003D6C;
+      font-weight: 700; }
+  .footer .redes {
+    display: flex; }
+
+.tituloPage {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: 30px; }
+
+.bio__contenido h1 {
+  text-align: center; }
+
+.bio__contenido .imagenBio img {
+  display: block;
+  text-align: right;
+  border-radius: 10px; }
+
+.bio__contenido .bioText {
+  font-family: 'Josefin Slab', serif;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: right; }
+
+/* ----RECETAS----- */
+.card {
+  width: 300px;
+  height: 200px;
+  border-radius: 15px;
+  padding: 1.5rem;
+  background: white;
+  position: relative; }
+  .card :hover {
+    display: flex;
+    align-items: flex-end;
+    transition: 0.4s ease-out;
+    transform: translateY(20px);
+    opacity: 0.5; }
+
+.card-img-top {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 15px; }
+
+.info {
+  font-family: 'Josefin Slab', serif;
+  font-size: 38px;
+  font-weight: 700;
+  text-align: center;
+  padding: 20px;
+  color: black; }
+  .info :hover {
+    opacity: 1;
+    transition: 0.3s; }
+
+/*----Galeria----- */
+.carrusel {
+  width: 310px;
+  margin: 0 auto 5px auto; }
+  .carrusel .carousel-item {
+    height: 500px; }
+    .carrusel .carousel-item .img__gal {
+      border-radius: 15px;
+      border: solid #cabdbd; }
+  .carrusel .carousel-control-prev,
+  .carrusel .carousel-control-next {
+    width: 20px;
+    height: 20px;
+    top: calc(50% - 25px);
+    margin: 10px; }
+
+/* ----SERVICIOS---- */
+.titulo__servi {
+  font-family: 'Josefin Slab', serif; }
+  .titulo__servi .titulo1 {
+    font-family: 'Playfair Display', serif; }
+  .titulo__servi .icon {
+    display: flex;
+    justify-content: center;
+    align-items: baseline; }
+  .titulo__servi .textServ {
+    padding: 5px; }
+  .titulo__servi .boton {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    width: 100%;
+    font-family: 'Playfair Display', serif; }

@@ -1,0 +1,26 @@
+/*----Galeria----- */
+
+.carrusel{
+    width: 310px;
+    margin: 0 auto 5px auto;
+    .carousel-item{
+        height: 500px;
+        .img__gal{
+            border-radius: 15px;
+            border: solid #cabdbd;
+        }
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 20px;
+        height: 20px;
+        top: calc(50% - 25px);
+        margin: 10px;
+    }
+}
+
+
+
+
+
