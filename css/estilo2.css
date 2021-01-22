@@ -4,13 +4,10 @@ html, body {
 .titulo__index {
   background: #ece8d8; }
   .titulo__index .tituloHome {
-    font-family: 'Playfair Display', serif;
-    font-style: italic;
-    font-weight: 700;
-    font-size: 40px;
-    color: #3a3939;
-    text-decoration: none;
-    padding: 20px; }
+    width: 400px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px; }
   .titulo__index .menu {
     font-family: 'Josefin Slab', serif;
     font-weight: 600;
