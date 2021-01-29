@@ -1,55 +1,15 @@
-.titulo__index{
-    background: #ece8d8;
-    
-    .tituloHome{
-        width: 400px;
-        height: 100px;
-        margin: 10px;
+.body__home{
+    background-image: url(../images/home/fondo-negro.jpg);
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+
+    .imgFuego{
+        display: block;
+        text-align: center;
         padding: 10px;
     }
-    .menu {
-        font-family: 'Josefin Slab', serif;
-        font-weight: 600;
-        font-size: 25px;
-        padding: 15px;
-        color: #747474;
-        margin: 10px;
-        
-        :hover{
-            color:white !important;
-            background-color: black;
-            padding: 5px;
-            border-radius: 5px;
-            font-weight: 600;
-            transition: all 0.8s;
-            }
-        }
-}
-
-.imgFuego{
-    display: block;
-    text-align: center;
-    padding: 10px;
-}
-
-.footer{
-    background:#ece8d8;
-    padding: 15px;
-    .fin p{
-        font-family: 'Josefin Slab', serif;
-        font-weight: 500;
-        color: #3a3939;
-        padding: 15px;
-        span{
-            color:#003D6C;
-            font-weight: 700;
-        }
-    }
-    .redes{
-        display: flex;
-            }
-    
-
 }
 
 

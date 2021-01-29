@@ -1,0 +1,29 @@
+.titulo__index{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    .logoHome{
+        width: 60vh;
+        position: relative;
+    }
+    .custom-toggler .navbar-toggler-icon { 
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
+        } 
+    .menu {
+        font-family: 'Josefin Slab', serif;
+        font-weight: 600;
+        text-shadow: 2px 2px 4px #a0a0a0;
+        :hover{
+            margin: 0 2px 0 2px;
+            text-decoration: underline;
+            color: #747474;
+            font-weight: 600;
+            transition: all 0.5s;
+            font-size: 25px;
+        }
+        a {
+            font-size: 20px;
+            color: #ffffff;
+        }
+    }
+}

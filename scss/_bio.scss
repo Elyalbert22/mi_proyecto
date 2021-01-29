@@ -1,23 +1,43 @@
+.body__bio{
+    background: black;
+    background-image: url(../images/bio/fondo-bio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
 .tituloPage{
     font-family: 'Playfair Display', serif;
     font-weight: 500;
-    font-size: 30px;
+    font-size: 40px;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #444444;
 }
 
 .bio__contenido{
-    h1{
-        text-align: center;
-    }
-    .imagenBio img{
+    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    .imagenBio{
         display: block;
-        text-align: right;
+        text-align: center;
         border-radius: 10px;
+        margin: 5px;
+        padding: 5px;
     }
     .bioText{
         font-family:'Josefin Slab', serif;
         font-weight: 600;
         font-size: 20px;
-        text-align: right;
+        text-align: center;
+        background-color: #ffffff69;
+        width: 500px;
+        height: 400px;
+        border-radius: 10px;
+        margin: 10px;
+        overflow: hidden;
     }
 }
 

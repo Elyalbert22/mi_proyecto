@@ -1,0 +1,57 @@
+.footer{
+    padding: 15px;
+    p{
+        font-family: 'Josefin Slab', serif;
+        font-weight: 500;
+        color: #ffffff;
+        overflow: hidden;
+        span{
+            color:#a10404;
+            font-weight: 800;
+            
+        }
+    }
+    .redes-container {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        ul{
+            margin:0;
+            li{
+                display: inline-block;
+                margin:0 5px;
+                width: 40px;
+                height: 40px;
+                text-align: center;
+                a{
+                    display: block;
+                    padding: 0 10px;
+                    background: #ffffff;
+                    color: #000000;
+                    line-height: 40px;
+                    font-size: 18px;
+                    box-shadow: 0 3px 5px 0 rgba(255,255,255,0.4);
+                    transition: .3s;
+                    &:hover{
+                    transform: translatey(-5px) scale(1.05);
+                    }
+                    
+                }
+                $redes:(
+                    facebook:#3D2DF9,
+                    instagram: #FB42A4,
+                    linkedin: #41A3FF
+                    );
+                &:hover{
+                @each $red, $color in $redes {
+                .#{$red}{
+                    background: $color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
