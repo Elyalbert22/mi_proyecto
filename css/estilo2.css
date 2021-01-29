@@ -61,7 +61,8 @@
           box-shadow: 0 3px 5px 0 rgba(255, 255, 255, 0.4);
           transition: .3s; }
           .footer .redes-container ul li a:hover {
-            transform: translatey(-5px) scale(1.05); }
+            transform: translatey(-5px) scale(1.05);
+            color: #ffffff; }
         .footer .redes-container ul li:hover .facebook {
           background: #3D2DF9; }
         .footer .redes-container ul li:hover .instagram {
@@ -79,6 +80,8 @@
     display: block;
     text-align: center;
     padding: 10px; }
+    .body__home .imgFuego .rounded {
+      border: solid 5px #ffffffef; }
 
 .body__bio {
   background: black;
@@ -102,10 +105,11 @@
   justify-content: space-around; }
   .bio__contenido .imagenBio {
     display: block;
-    text-align: center;
-    border-radius: 10px;
-    margin: 5px;
-    padding: 5px; }
+    text-align: center; }
+    .bio__contenido .imagenBio .img-fluid {
+      border: solid 5px #ffffffef;
+      border-radius: 10px;
+      margin: 5px; }
   .bio__contenido .bioText {
     font-family: 'Josefin Slab', serif;
     font-weight: 600;
