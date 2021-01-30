@@ -1,3 +1,5 @@
+/* ---------BIO-------- */
+
 .body__bio{
     background: black;
     background-image: url(../images/bio/fondo-bio.jpg);
@@ -23,26 +25,26 @@
     .imagenBio{
         display: block;
         text-align: center;
-        
-        
+        margin: 2.1%;
         .img-fluid{
             border: solid 5px #ffffffef;
             border-radius: 10px;
             margin: 5px;
         }
-        
-    }
+    }    
     .bioText{
         font-family:'Josefin Slab', serif;
-        font-weight: 600;
-        font-size: 20px;
+        font-weight: 700;
+        font-size: 1.2em;
         text-align: center;
-        background-color: #ffffff69;
-        width: 500px;
-        height: 400px;
+        background-color: #ffffffad;
         border-radius: 10px;
-        margin: 10px;
+        margin: 2.5%;
+        padding: 2.5%;
         overflow: hidden;
+        .text-center{
+            margin: auto;
+        }
     }
 }
 

@@ -1,3 +1,4 @@
+/* ---------MAIN-------- */
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +7,8 @@
 .titulo__index {
   display: flex;
   justify-content: center;
-  text-align: center; }
+  text-align: center;
+  padding: 16px; }
   .titulo__index .logoHome {
     width: 60vh;
     position: relative; }
@@ -27,6 +29,7 @@
       font-size: 20px;
       color: #ffffff; }
 
+/* ---------FOOTER-------- */
 .footer {
   padding: 15px; }
   .footer p {
@@ -70,6 +73,7 @@
         .footer .redes-container ul li:hover .linkedin {
           background: #41A3FF; }
 
+/* ---------INDEX-------- */
 .body__home {
   background-image: url(../images/home/fondo-negro.jpg);
   background-color: black;
@@ -83,6 +87,7 @@
     .body__home .imgFuego .rounded {
       border: solid 5px #ffffffef; }
 
+/* ---------BIO-------- */
 .body__bio {
   background: black;
   background-image: url(../images/bio/fondo-bio.jpg);
@@ -105,59 +110,31 @@
   justify-content: space-around; }
   .bio__contenido .imagenBio {
     display: block;
-    text-align: center; }
+    text-align: center;
+    margin: 2.1%; }
     .bio__contenido .imagenBio .img-fluid {
       border: solid 5px #ffffffef;
       border-radius: 10px;
       margin: 5px; }
   .bio__contenido .bioText {
     font-family: 'Josefin Slab', serif;
-    font-weight: 600;
-    font-size: 20px;
+    font-weight: 700;
+    font-size: 1.2em;
     text-align: center;
-    background-color: #ffffff69;
-    width: 500px;
-    height: 400px;
+    background-color: #ffffffad;
     border-radius: 10px;
-    margin: 10px;
+    margin: 2.5%;
+    padding: 2.5%;
     overflow: hidden; }
+    .bio__contenido .bioText .text-center {
+      margin: auto; }
 
 /* ----RECETAS----- */
 .card {
-  width: 300px;
-  height: 200px;
-  border-radius: 15px;
-  padding: 1.5rem;
-  background: white;
-  position: relative; }
-  .card :hover {
-    display: flex;
-    align-items: flex-end;
-    transition: 0.4s ease-out;
-    transform: translateY(20px);
-    opacity: 0.5; }
+  width: 50%;
+  height: 50%; }
 
-.card-img-top {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 15px; }
-
-.info {
-  font-family: 'Josefin Slab', serif;
-  font-size: 38px;
-  font-weight: 700;
-  text-align: center;
-  padding: 20px;
-  color: black; }
-  .info :hover {
-    opacity: 1;
-    transition: 0.3s; }
-
-/*----Galeria----- */
+/* ---------GALERIA-------- */
 .carrusel {
   width: 310px;
   margin: 0 auto 5px auto; }
@@ -174,6 +151,7 @@
     margin: 10px; }
 
 /* ----SERVICIOS---- */
+/* ---------SERVICIOS-------- */
 .titulo__servi {
   font-family: 'Josefin Slab', serif; }
   .titulo__servi .titulo1 {
