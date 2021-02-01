@@ -1,34 +1,53 @@
-
-/* ----SERVICIOS---- */
-
 /* ---------SERVICIOS-------- */
 
 .titulo__servi{
     font-family:'Josefin Slab', serif;
-    .titulo1{
-        font-family: 'Playfair Display', serif;
-    }
-    .icon{
+    .div-contenedor{
         display: flex;
-        justify-content: center;
-        align-items: baseline;
-
+        justify-content: space-evenly;
+        .curso, .eventos, .asesor{
+            background-color: #ffffffda ;
+            border-radius: 10px;
+            margin: 15px;
+            .icon{
+                display: flex;
+                justify-content: center;
+                padding: 10px;
+            }
+            .titulo1{
+                .text-center{
+                    font-family: 'Playfair Display', serif;
+                    font-size: 2rem;
+                    font-weight: 500;
+                    padding: 10px;
+                }
+            }
+            .textoCurso{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-weight: 700;
+                font-size: 1.2em;
+            }
+            .boton{
+                text-align: center;
+            }
+            .textoEventos{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-weight: 700;
+            font-size: 1.2em;
+            }
     }
-    
-    .textServ{
-        
-        padding: 5px;
-        
         
     }
-    
-    .boton{
-        display: flex;
-        justify-content: center;
-        align-items: baseline;
-        width: 100%;
-        font-family: 'Playfair Display', serif;
-        
-        
+    @media screen and (max-width: 900px) {
+        .div-contenedor{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     }
 }

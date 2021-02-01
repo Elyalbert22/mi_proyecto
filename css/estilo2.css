@@ -130,9 +130,38 @@
       margin: auto; }
 
 /* ----RECETAS----- */
-.card {
-  width: 50%;
-  height: 50%; }
+.div-container {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center; }
+  .div-container .div-items {
+    text-align: center;
+    position: relative;
+    margin-bottom: 1rem;
+    transition: 0.4s; }
+    .div-container .div-items:hover {
+      filter: blur(3px); }
+    .div-container .div-items .img-recetas {
+      width: 400px;
+      height: 300px;
+      border-radius: 10px;
+      border: solid 5px #ffffff;
+      background: #000000;
+      object-fit: cover; }
+  .div-container .text-center {
+    font-family: 'Josefin Slab', serif;
+    font-weight: 700;
+    color: #000000de;
+    font-size: 2.5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    transition: .5s;
+    opacity: 0; }
+    .div-container .text-center:hover {
+      opacity: 1; }
 
 /* ---------GALERIA-------- */
 .carrusel {
@@ -150,21 +179,42 @@
     top: calc(50% - 25px);
     margin: 10px; }
 
-/* ----SERVICIOS---- */
 /* ---------SERVICIOS-------- */
 .titulo__servi {
   font-family: 'Josefin Slab', serif; }
-  .titulo__servi .titulo1 {
-    font-family: 'Playfair Display', serif; }
-  .titulo__servi .icon {
+  .titulo__servi .div-contenedor {
     display: flex;
-    justify-content: center;
-    align-items: baseline; }
-  .titulo__servi .textServ {
-    padding: 5px; }
-  .titulo__servi .boton {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    width: 100%;
-    font-family: 'Playfair Display', serif; }
+    justify-content: space-evenly; }
+    .titulo__servi .div-contenedor .curso, .titulo__servi .div-contenedor .eventos, .titulo__servi .div-contenedor .asesor {
+      background-color: #ffffffda;
+      border-radius: 10px;
+      margin: 15px; }
+      .titulo__servi .div-contenedor .curso .icon, .titulo__servi .div-contenedor .eventos .icon, .titulo__servi .div-contenedor .asesor .icon {
+        display: flex;
+        justify-content: center;
+        padding: 10px; }
+      .titulo__servi .div-contenedor .curso .titulo1 .text-center, .titulo__servi .div-contenedor .eventos .titulo1 .text-center, .titulo__servi .div-contenedor .asesor .titulo1 .text-center {
+        font-family: 'Playfair Display', serif;
+        font-size: 2rem;
+        font-weight: 500;
+        padding: 10px; }
+      .titulo__servi .div-contenedor .curso .textoCurso, .titulo__servi .div-contenedor .eventos .textoCurso, .titulo__servi .div-contenedor .asesor .textoCurso {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-weight: 700;
+        font-size: 1.2em; }
+      .titulo__servi .div-contenedor .curso .boton, .titulo__servi .div-contenedor .eventos .boton, .titulo__servi .div-contenedor .asesor .boton {
+        text-align: center; }
+      .titulo__servi .div-contenedor .curso .textoEventos, .titulo__servi .div-contenedor .eventos .textoEventos, .titulo__servi .div-contenedor .asesor .textoEventos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-weight: 700;
+        font-size: 1.2em; }
+  @media screen and (max-width: 900px) {
+    .titulo__servi .div-contenedor {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
