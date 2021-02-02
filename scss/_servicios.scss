@@ -22,27 +22,24 @@
                     padding: 10px;
                 }
             }
-            .textoCurso{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                font-weight: 700;
-                font-size: 1.2em;
+            .textoServ{
+            font-weight: 700;
+            font-size: 1.2em;
+                ul{
+                    list-style-position: inside;
+                }
             }
             .boton{
                 text-align: center;
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 2px;
+                font-family: 'Playfair Display', serif;
             }
-            .textoEventos{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            font-weight: 700;
-            font-size: 1.2em;
-            }
+
+        }
     }
-        
-    }
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 1000px) {
         .div-contenedor{
             display: flex;
             flex-direction: column;

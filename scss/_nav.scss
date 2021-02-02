@@ -15,12 +15,11 @@
         font-weight: 600;
         text-shadow: 2px 2px 4px #a0a0a0;
         :hover{
-            margin: 0 2px 0 2px;
+            
             text-decoration: underline;
             color: #747474;
             font-weight: 600;
-            transition: all 0.5s;
-            font-size: 25px;
+            transition: all 0.2s;
         }
         a {
             font-size: 20px;
