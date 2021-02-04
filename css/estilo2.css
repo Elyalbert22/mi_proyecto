@@ -60,7 +60,7 @@
           line-height: 40px;
           font-size: 18px;
           box-shadow: 0 3px 5px 0 rgba(255, 255, 255, 0.4);
-          transition: .3s; }
+          transition: .2s; }
           .footer .redes-container ul li a:hover {
             transform: translatey(-5px) scale(1.05);
             color: #ffffff; }
@@ -92,7 +92,40 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%; }
+  .body__bio .bio__contenido {
+    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    .body__bio .bio__contenido .tituloPage {
+      font-family: 'Playfair Display', serif;
+      font-weight: 500;
+      font-size: 40px;
+      text-align: center;
+      color: #ffffff;
+      text-shadow: 2px 2px 4px #444444; }
+    .body__bio .bio__contenido .imagenBio {
+      display: block;
+      text-align: center;
+      margin: 2.1%; }
+      .body__bio .bio__contenido .imagenBio .img-fluid {
+        border: solid 5px #ffffffef;
+        border-radius: 10px;
+        margin: 5px; }
+    .body__bio .bio__contenido .bioText {
+      font-family: 'Josefin Slab', serif;
+      font-weight: 700;
+      font-size: 1.2em;
+      text-align: center;
+      background-color: #ffffffad;
+      border-radius: 10px;
+      margin: 2.5%;
+      padding: 2.5%;
+      overflow: hidden; }
+      .body__bio .bio__contenido .bioText .text-center {
+        margin: auto; }
 
+/* ----RECETAS----- */
 .tituloPage {
   font-family: 'Playfair Display', serif;
   font-weight: 500;
@@ -101,33 +134,6 @@
   color: #ffffff;
   text-shadow: 2px 2px 4px #444444; }
 
-.bio__contenido {
-  display: inline-block;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around; }
-  .bio__contenido .imagenBio {
-    display: block;
-    text-align: center;
-    margin: 2.1%; }
-    .bio__contenido .imagenBio .img-fluid {
-      border: solid 5px #ffffffef;
-      border-radius: 10px;
-      margin: 5px; }
-  .bio__contenido .bioText {
-    font-family: 'Josefin Slab', serif;
-    font-weight: 700;
-    font-size: 1.2em;
-    text-align: center;
-    background-color: #ffffffad;
-    border-radius: 10px;
-    margin: 2.5%;
-    padding: 2.5%;
-    overflow: hidden; }
-    .bio__contenido .bioText .text-center {
-      margin: auto; }
-
-/* ----RECETAS----- */
 .div-container {
   display: flex;
   flex-flow: wrap;
@@ -182,6 +188,13 @@
 /* ---------SERVICIOS-------- */
 .titulo__servi {
   font-family: 'Josefin Slab', serif; }
+  .titulo__servi .tituloPage {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 40px;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #444444; }
   .titulo__servi .div-contenedor {
     display: flex;
     justify-content: space-evenly; }
@@ -199,15 +212,21 @@
         font-weight: 500;
         padding: 10px; }
       .titulo__servi .div-contenedor .curso .textoServ, .titulo__servi .div-contenedor .eventos .textoServ, .titulo__servi .div-contenedor .asesor .textoServ {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         font-weight: 700;
         font-size: 1.2em; }
+        .titulo__servi .div-contenedor .curso .textoServ p, .titulo__servi .div-contenedor .eventos .textoServ p, .titulo__servi .div-contenedor .asesor .textoServ p {
+          text-align: center; }
         .titulo__servi .div-contenedor .curso .textoServ ul, .titulo__servi .div-contenedor .eventos .textoServ ul, .titulo__servi .div-contenedor .asesor .textoServ ul {
           list-style-position: inside; }
+      .titulo__servi .div-contenedor .curso .text_medida, .titulo__servi .div-contenedor .eventos .text_medida, .titulo__servi .div-contenedor .asesor .text_medida {
+        height: 420px; }
       .titulo__servi .div-contenedor .curso .boton, .titulo__servi .div-contenedor .eventos .boton, .titulo__servi .div-contenedor .asesor .boton {
         text-align: center;
         width: 100%;
-        padding: 10px;
-        margin-bottom: 2px;
+        padding: 15px;
         font-family: 'Playfair Display', serif; }
   @media screen and (max-width: 1000px) {
     .titulo__servi .div-contenedor {
@@ -215,3 +234,64 @@
       flex-direction: column;
       justify-content: center;
       align-items: center; } }
+
+/* ---------CONTACTO-------- */
+.contacto__fondo {
+  background: black;
+  background-image: url(../images/contacto/fondo-contacto2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%; }
+  .contacto__fondo .div__contenedor {
+    display: flex;
+    justify-content: flex-end; }
+    .contacto__fondo .div__contenedor .formulario {
+      background-color: #ffffff9f;
+      margin: 10px;
+      padding: 5px;
+      width: 40%;
+      font-family: 'Josefin Slab', serif;
+      font-weight: 700;
+      font-size: 1.2em;
+      text-align: center; }
+      @media screen and (max-width: 768px) {
+        .contacto__fondo .div__contenedor .formulario {
+          width: 100%; } }
+      .contacto__fondo .div__contenedor .formulario input, .contacto__fondo .div__contenedor .formulario textarea {
+        background: #000000be;
+        color: #ffffff;
+        font-size: 1.2em; }
+      .contacto__fondo .div__contenedor .formulario .boton_contacto {
+        text-align: center;
+        padding-bottom: 5px; }
+    .contacto__fondo .div__contenedor .redes_sociales {
+      width: 50%; }
+      @media screen and (max-width: 768px) {
+        .contacto__fondo .div__contenedor .redes_sociales {
+          display: none; } }
+      .contacto__fondo .div__contenedor .redes_sociales a {
+        display: block;
+        margin: 10px;
+        line-height: 200px;
+        text-align: center;
+        font-size: 4em;
+        color: #fff;
+        transition: .2s; }
+        .contacto__fondo .div__contenedor .redes_sociales a:hover {
+          background: #ffffff; }
+      .contacto__fondo .div__contenedor .redes_sociales .face_book {
+        background: #1c41e6; }
+      .contacto__fondo .div__contenedor .redes_sociales .face_book:hover {
+        color: #1c41e6; }
+      .contacto__fondo .div__contenedor .redes_sociales .ins_tagram {
+        background: #FB42A4; }
+      .contacto__fondo .div__contenedor .redes_sociales .ins_tagram:hover {
+        color: #FB42A4; }
+      .contacto__fondo .div__contenedor .redes_sociales .lin_kedin {
+        background: #41A3FF; }
+      .contacto__fondo .div__contenedor .redes_sociales .lin_kedin:hover {
+        color: #41A3FF; }
+      .contacto__fondo .div__contenedor .redes_sociales .e_mail {
+        background: #2A935C; }
+      .contacto__fondo .div__contenedor .redes_sociales .e_mail:hover {
+        color: #2A935C; }

@@ -6,45 +6,42 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-}
-
-.tituloPage{
-    font-family: 'Playfair Display', serif;
-    font-weight: 500;
-    font-size: 40px;
-    text-align: center;
-    color: #ffffff;
-    text-shadow: 2px 2px 4px #444444;
-}
-
-.bio__contenido{
-    display: inline-block;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    .imagenBio{
-        display: block;
-        text-align: center;
-        margin: 2.1%;
-        .img-fluid{
-            border: solid 5px #ffffffef;
-            border-radius: 10px;
-            margin: 5px;
+    .bio__contenido{
+        display: inline-block;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        .tituloPage{
+            font-family: 'Playfair Display', serif;
+            font-weight: 500;
+            font-size: 40px;
+            text-align: center;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px #444444;
         }
-    }    
-    .bioText{
-        font-family:'Josefin Slab', serif;
-        font-weight: 700;
-        font-size: 1.2em;
-        text-align: center;
-        background-color: #ffffffad;
-        border-radius: 10px;
-        margin: 2.5%;
-        padding: 2.5%;
-        overflow: hidden;
-        .text-center{
-            margin: auto;
+        .imagenBio{
+            display: block;
+            text-align: center;
+            margin: 2.1%;
+            .img-fluid{
+                border: solid 5px #ffffffef;
+                border-radius: 10px;
+                margin: 5px;
+            }
+        }    
+        .bioText{
+            font-family:'Josefin Slab', serif;
+            font-weight: 700;
+            font-size: 1.2em;
+            text-align: center;
+            background-color: #ffffffad;
+            border-radius: 10px;
+            margin: 2.5%;
+            padding: 2.5%;
+            overflow: hidden;
+            .text-center{
+                margin: auto;
+            }
         }
     }
 }
-

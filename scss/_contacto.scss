@@ -1,1 +1,67 @@
 /* ---------CONTACTO-------- */
+.contacto__fondo{
+    background: black;
+    background-image: url(../images/contacto/fondo-contacto2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    
+    .div__contenedor{
+        display: flex;
+        justify-content: flex-end;
+        .formulario{
+            background-color: #ffffff9f;
+            margin: 10px;
+            padding: 5px;
+            width: 40%;
+            font-family:'Josefin Slab', serif;
+            font-weight: 700;
+            font-size: 1.2em;
+            text-align: center;
+            @media screen and (max-width: 768px){
+                width: 100%;
+            }
+            input, textarea {
+                background: #000000be;
+                color: #ffffff;
+                font-size: 1.2em;
+            }
+            .boton_contacto{
+                text-align: center;
+                padding-bottom: 5px;
+            }
+        }
+        .redes_sociales{
+            width: 50%;
+            @media screen and (max-width: 768px){
+                display: none;
+            }
+            a{
+                display: block;
+                margin: 10px;
+                line-height: 200px;
+                text-align: center;
+                font-size: 4em;
+                color: #fff;
+                transition: .2s;
+                &:hover{
+                    background:#ffffff;
+                }
+            }
+            $redes:(
+                face_book: #1c41e6,
+                ins_tagram: #FB42A4,
+                lin_kedin: #41A3FF,
+                e_mail:#2A935C
+                );
+            @each $red, $color in $redes {
+            .#{$red}{
+                background: $color;
+                    }
+            .#{$red}:hover{
+                color: $color;
+                    }
+                }
+            }
+        }
+    }

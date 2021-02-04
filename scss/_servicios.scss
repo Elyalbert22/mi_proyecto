@@ -2,6 +2,14 @@
 
 .titulo__servi{
     font-family:'Josefin Slab', serif;
+    .tituloPage{
+        font-family: 'Playfair Display', serif;
+        font-weight: 500;
+        font-size: 40px;
+        text-align: center;
+        color: #ffffff;
+        text-shadow: 2px 2px 4px #444444;
+    }
     .div-contenedor{
         display: flex;
         justify-content: space-evenly;
@@ -23,20 +31,29 @@
                 }
             }
             .textoServ{
-            font-weight: 700;
-            font-size: 1.2em;
+                display: flex;
+                flex-direction: column;
+                
+                align-items: center;
+                font-weight: 700;
+                font-size: 1.2em;
+                p{
+                    text-align: center;
+                }
                 ul{
                     list-style-position: inside;
                 }
             }
+            .text_medida{
+                height: 420px;
+                
+            }
             .boton{
                 text-align: center;
                 width: 100%;
-                padding: 10px;
-                margin-bottom: 2px;
+                padding: 15px;
                 font-family: 'Playfair Display', serif;
             }
-
         }
     }
     @media screen and (max-width: 1000px) {
