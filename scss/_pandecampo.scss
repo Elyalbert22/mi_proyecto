@@ -1,0 +1,54 @@
+.body_recetas{
+    background: url(../images/home/fondo-negro.jpg);
+    background-color: #0000;
+    .imagen-superior{
+        background: url(../images/panCampo.jpeg) no-repeat center center;
+        background-size: cover;
+        height: 250px;
+        display: block;
+        @media screen and (max-width: 768px){
+            display: none;
+            }
+        }
+        .receta-pan{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: auto;
+            @media screen and (max-width: 768px){
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: auto;
+            }
+        .ingrs-prep{
+            background-color: #ffffffad;
+            list-style-position: inside;
+            font-family:'Josefin Slab', serif;
+            font-weight: 700;
+            font-size: 1.2em;
+            text-align: center;
+            border-radius: 10px;
+            margin: 2.5%;
+            padding: 2.5%;
+            h2{
+                font-family: 'Playfair Display', serif;
+                font-weight: 500;
+                text-shadow: 2px 2px 4px #444444;
+                padding: 10px;
+                text-decoration: underline;
+                
+            }
+            
+        }
+    }
+    @media screen and (max-width: 768px){
+        display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+    }
+}

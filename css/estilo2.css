@@ -29,7 +29,8 @@
 
 /* ---------FOOTER-------- */
 .footer {
-  padding: 15px; }
+  padding: 15px;
+  margin-top: 20px; }
   .footer p {
     font-family: 'Josefin Slab', serif;
     font-weight: 500;
@@ -170,20 +171,97 @@
       opacity: 0; }
 
 /* ---------GALERIA-------- */
-.carrusel {
-  width: 310px;
-  margin: 0 auto 5px auto; }
-  .carrusel .carousel-item {
-    height: 500px; }
-    .carrusel .carousel-item .img__gal {
-      border-radius: 15px;
-      border: solid #cabdbd; }
-  .carrusel .carousel-control-prev,
-  .carrusel .carousel-control-next {
-    width: 20px;
-    height: 20px;
-    top: calc(50% - 25px);
-    margin: 10px; }
+.body-contenedor .galeria-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-rows: 150px;
+  padding: 20px;
+  grid-gap: 10px; }
+  .body-contenedor .galeria-container .galeria-items {
+    position: relative;
+    overflow: hidden;
+    border: solid 5px #ffffffef;
+    border-radius: 10px; }
+    .body-contenedor .galeria-container .galeria-items .galeria-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .3s; }
+      .body-contenedor .galeria-container .galeria-items .galeria-img:hover {
+        transform: scale(1.3); }
+
+.body-contenedor .light-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease-in-out;
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0); }
+  .body-contenedor .light-box:target {
+    transform: scale(1); }
+  .body-contenedor .light-box img {
+    width: 50vw;
+    max-height: 90%;
+    object-fit: contain; }
+  .body-contenedor .light-box .close {
+    display: block;
+    position: absolute;
+    font-size: 20px;
+    top: 60px;
+    right: 60px;
+    color: #ffffff;
+    background: #c30909;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    opacity: 1;
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px; }
+  .body-contenedor .light-box .next {
+    display: block;
+    color: #ffffff;
+    background: #c30909;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    font-size: 25px;
+    margin: 10px;
+    line-height: 30px;
+    text-align: center; }
+
+@media (min-width: 600px) {
+  .body-contenedor .galeria-container {
+    grid-template-columns: repeat(2, 1fr); }
+    .body-contenedor .galeria-container .galeria-items:nth-child(3) {
+      grid-row-start: span 3; }
+    .body-contenedor .galeria-container .galeria-items:nth-child(4) {
+      grid-row-start: span 3; }
+    .body-contenedor .galeria-container .galeria-items:nth-child(7) {
+      grid-row-start: span 2; }
+    .body-contenedor .galeria-container .galeria-items:nth-child(8) {
+      grid-row-start: span 2; }
+    .body-contenedor .galeria-container .galeria-items:nth-child(9) {
+      grid-column-start: span 2; } }
+
+@media (min-width: 950px) {
+  .body-contenedor .galeria-container {
+    grid-template-columns: repeat(4, 1fr); }
+    .body-contenedor .galeria-container .galeria-items:nth-child(1) {
+      grid-row-start: span 2;
+      grid-column-start: span 2; }
+    .body-contenedor .galeria-container .galeria-items:nth-child(5) {
+      grid-row-start: span 2;
+      grid-column-start: span 2; }
+    .body-contenedor .galeria-container .galeria-items:nth-child(9) {
+      grid-row-start: span 2;
+      grid-column-start: span 2; } }
 
 /* ---------SERVICIOS-------- */
 .titulo__servi {
@@ -247,7 +325,7 @@
     justify-content: flex-end; }
     .contacto__fondo .div__contenedor .formulario {
       background-color: #ffffff9f;
-      margin: 10px;
+      margin: auto;
       padding: 5px;
       width: 40%;
       font-family: 'Josefin Slab', serif;
@@ -265,14 +343,14 @@
         text-align: center;
         padding-bottom: 5px; }
     .contacto__fondo .div__contenedor .redes_sociales {
-      width: 50%; }
+      width: 45%; }
       @media screen and (max-width: 768px) {
         .contacto__fondo .div__contenedor .redes_sociales {
           display: none; } }
       .contacto__fondo .div__contenedor .redes_sociales a {
         display: block;
         margin: 10px;
-        line-height: 200px;
+        line-height: 220px;
         text-align: center;
         font-size: 4em;
         color: #fff;
@@ -295,3 +373,51 @@
         background: #2A935C; }
       .contacto__fondo .div__contenedor .redes_sociales .e_mail:hover {
         color: #2A935C; }
+
+.body_recetas {
+  background: url(../images/home/fondo-negro.jpg);
+  background-color: #0000; }
+  .body_recetas .imagen-superior {
+    background: url(../images/panCampo.jpeg) no-repeat center center;
+    background-size: cover;
+    height: 250px;
+    display: block; }
+    @media screen and (max-width: 768px) {
+      .body_recetas .imagen-superior {
+        display: none; } }
+  .body_recetas .receta-pan {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: auto; }
+    @media screen and (max-width: 768px) {
+      .body_recetas .receta-pan {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto; } }
+    .body_recetas .receta-pan .ingrs-prep {
+      background-color: #ffffffad;
+      list-style-position: inside;
+      font-family: 'Josefin Slab', serif;
+      font-weight: 700;
+      font-size: 1.2em;
+      text-align: center;
+      border-radius: 10px;
+      margin: 2.5%;
+      padding: 2.5%; }
+      .body_recetas .receta-pan .ingrs-prep h2 {
+        font-family: 'Playfair Display', serif;
+        font-weight: 500;
+        text-shadow: 2px 2px 4px #444444;
+        padding: 10px;
+        text-decoration: underline; }
+  @media screen and (max-width: 768px) {
+    .body_recetas {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: auto; } }
