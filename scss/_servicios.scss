@@ -45,8 +45,10 @@
                 }
             }
             .text_medida{
-                height: 420px;
-                
+                height: 415px;
+                @media (min-width:1001px) and (max-width:1200px){
+                    height: 500px;
+                }
             }
             .boton{
                 text-align: center;

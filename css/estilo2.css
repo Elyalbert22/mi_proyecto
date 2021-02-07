@@ -87,6 +87,14 @@
       border: solid 5px #ffffffef; }
 
 /* ---------BIO-------- */
+.tituloPage {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: 40px;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px #444444; }
+
 .body__bio {
   background: black;
   background-image: url(../images/bio/fondo-bio.jpg);
@@ -98,13 +106,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around; }
-    .body__bio .bio__contenido .tituloPage {
-      font-family: 'Playfair Display', serif;
-      font-weight: 500;
-      font-size: 40px;
-      text-align: center;
-      color: #ffffff;
-      text-shadow: 2px 2px 4px #444444; }
     .body__bio .bio__contenido .imagenBio {
       display: block;
       text-align: center;
@@ -127,14 +128,6 @@
         margin: auto; }
 
 /* ----RECETAS----- */
-.tituloPage {
-  font-family: 'Playfair Display', serif;
-  font-weight: 500;
-  font-size: 40px;
-  text-align: center;
-  color: #ffffff;
-  text-shadow: 2px 2px 4px #444444; }
-
 .div-container {
   display: flex;
   flex-flow: wrap;
@@ -154,20 +147,19 @@
       object-fit: cover;
       filter: blur(3px);
       box-shadow: 0 0 10px  red; }
-  .div-container .text-center {
+  .div-container .texto_rec {
     font-family: 'Josefin Slab', serif;
     font-weight: 700;
     color: #000000de;
-    font-size: 2.5em;
+    font-size: 3em;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
     transition: .2s;
     opacity: 1;
-    text-shadow: 3px 3px 4px #e0e0e0cc; }
-    .div-container .text-center:hover {
+    text-shadow: 3px 3px 4px #000000c2; }
+    .div-container .texto_rec:hover {
       opacity: 0; }
 
 /* ---------GALERIA-------- */
@@ -194,8 +186,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  background: rgba(255, 255, 255, 0.3);
-  transition: transform 0.3s ease-in-out;
+  background: rgba(0, 0, 0, 0.9);
   width: 100%;
   height: 100vh;
   z-index: 1000;
@@ -206,7 +197,7 @@
   .body-contenedor .light-box:target {
     transform: scale(1); }
   .body-contenedor .light-box img {
-    width: 50vw;
+    width: 80%;
     max-height: 90%;
     object-fit: contain; }
   .body-contenedor .light-box .close {
@@ -226,9 +217,7 @@
     line-height: 30px; }
   .body-contenedor .light-box .next {
     display: block;
-    color: #ffffff;
-    background: #c30909;
-    border-radius: 50%;
+    color: #c30909;
     width: 35px;
     height: 35px;
     font-size: 25px;
@@ -300,7 +289,10 @@
         .titulo__servi .div-contenedor .curso .textoServ ul, .titulo__servi .div-contenedor .eventos .textoServ ul, .titulo__servi .div-contenedor .asesor .textoServ ul {
           list-style-position: inside; }
       .titulo__servi .div-contenedor .curso .text_medida, .titulo__servi .div-contenedor .eventos .text_medida, .titulo__servi .div-contenedor .asesor .text_medida {
-        height: 420px; }
+        height: 415px; }
+        @media (min-width: 1001px) and (max-width: 1200px) {
+          .titulo__servi .div-contenedor .curso .text_medida, .titulo__servi .div-contenedor .eventos .text_medida, .titulo__servi .div-contenedor .asesor .text_medida {
+            height: 500px; } }
       .titulo__servi .div-contenedor .curso .boton, .titulo__servi .div-contenedor .eventos .boton, .titulo__servi .div-contenedor .asesor .boton {
         text-align: center;
         width: 100%;
@@ -388,7 +380,7 @@
   .body_recetas .receta-pan {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
     margin: auto; }
     @media screen and (max-width: 768px) {
@@ -404,16 +396,17 @@
       font-family: 'Josefin Slab', serif;
       font-weight: 700;
       font-size: 1.2em;
-      text-align: center;
       border-radius: 10px;
       margin: 2.5%;
-      padding: 2.5%; }
+      padding: 2.5%;
+      text-align: left; }
       .body_recetas .receta-pan .ingrs-prep h2 {
         font-family: 'Playfair Display', serif;
         font-weight: 500;
         text-shadow: 2px 2px 4px #444444;
         padding: 10px;
-        text-decoration: underline; }
+        text-decoration: underline;
+        text-align: center; }
   @media screen and (max-width: 768px) {
     .body_recetas {
       display: flex;

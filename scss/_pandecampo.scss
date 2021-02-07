@@ -13,7 +13,7 @@
         .receta-pan{
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: center;
             align-items: flex-start;
             margin: auto;
             @media screen and (max-width: 768px){
@@ -29,17 +29,17 @@
             font-family:'Josefin Slab', serif;
             font-weight: 700;
             font-size: 1.2em;
-            text-align: center;
             border-radius: 10px;
             margin: 2.5%;
             padding: 2.5%;
+            text-align: left;
             h2{
                 font-family: 'Playfair Display', serif;
                 font-weight: 500;
                 text-shadow: 2px 2px 4px #444444;
                 padding: 10px;
                 text-decoration: underline;
-                
+                text-align: center;
             }
             
         }
