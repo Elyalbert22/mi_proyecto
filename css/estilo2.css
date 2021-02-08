@@ -326,7 +326,8 @@
       text-align: center; }
       @media screen and (max-width: 768px) {
         .contacto__fondo .div__contenedor .formulario {
-          width: 100%; } }
+          width: 100%;
+          margin: 15px; } }
       .contacto__fondo .div__contenedor .formulario input, .contacto__fondo .div__contenedor .formulario textarea {
         background: #000000be;
         color: #ffffff;
