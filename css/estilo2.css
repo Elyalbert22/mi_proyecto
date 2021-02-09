@@ -158,7 +158,7 @@
     transform: translate(-50%, -50%);
     transition: .2s;
     opacity: 1;
-    text-shadow: 3px 3px 4px #000000c2; }
+    text-shadow: 3px 3px 4px #ffffffe5; }
     .div-container .texto_rec:hover {
       opacity: 0; }
 
